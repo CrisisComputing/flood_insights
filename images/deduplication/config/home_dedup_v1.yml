@@ -1,0 +1,21 @@
+#Configurations for Image Collector
+thread_size: 10
+threshold: 7.1
+
+arch_name: 'resnet50'
+best_state_path: '/Users/umair/Desktop/QCRI/belmont_system/images/deduplication/model/resnet50_places365.pth.tar'
+
+redis:
+  host: 10.4.2.95
+  port: 6379 
+  input_q: 200204095933_emsc_landslide_image_IMG_DEDUP_INQ
+
+cache:
+  host: 10.4.2.100
+  port: 9200 
+  name: 200204095933_emsc_landslide_image_img_dedup
+
+es:
+  host: 10.4.2.107
+  port: 9500 
+  name: 200204095933_emsc_landslide_image_img_index
